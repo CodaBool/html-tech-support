@@ -1,0 +1,86 @@
+<!--
+File Name:			services.html
+Name:						Coda Bool
+Course:				COP 2830C at Valencia College
+Facilitator:		David Stendel
+Description:		The content for a service Tech support page. Display options on how to reach out to tech support.
+Date:				10/6/19
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Tech Support Services</title>
+		<link rel="stylesheet" href="./css/services.css" />
+		<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+		<!-- Fonts are pulled from Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Chakra+Petch|Libre+Baskerville|Lora&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div id="top">
+			<header>
+				<!-- Title -->
+				<h1>Tech Support</h1>
+			</header>
+			<nav>
+				<ul>
+					<!-- Navigational links to each page -->
+					<li><a href="./index.html">Home</a></li>
+					<li class="currentPage"><a href="./services.html">Services</a></li>
+					<li><a href="./gallery.html">Gallery</a></li>
+					<li><a href="./contact.html">Contact</a></li>
+					<li><a href="./about.html">About</a></li>
+				</ul>
+			</nav>
+		</div>
+		<article>
+			<!-- Intro title to the services offered -->
+			<h2>How can we help?</h2>
+			<!-- Flex container for the services boxes-->
+			<ul class="container">
+				<!-- Flex item within the container-->
+				<li class="item">
+					<!-- Box Title -->
+					<h3>Online Chat</h3>
+					<!-- Box Description -->
+					<p>We can help in any situation, click here to start a chat with a live service representative.</p>
+					<!-- Box Image -->
+					<img src="./images/chat.png" alt="chat" id="chatImage"> <br>
+					<a href="./chat.html" class="button">Live Chat</a>
+				</li>
+				<li class="item">
+					<!-- Box Title -->
+					<h3>In Store Help</h3>
+					<p>Come in and get an answer fast</p><br>
+					<!-- Box Image -->
+					<img src="./images/exterior.jpg" alt="building" id="buildingImage"> <br><br>
+					<a href="./store.html" class="button">Make a Reservation</a>
+				</li>
+				<li class="item">
+					<!-- Box Title -->
+					<h3>In Home</h3>
+					<!-- Box Description -->
+					<p>Let us come to you. We can help you setup and fix your home products</p>
+					<!-- Box Image -->
+					<img src="./images/map.png" alt="map" id="mapImage"><br>
+					<a href="./home.html" class="button">Schedule</a>
+				</li>
+				<li class="item">
+					<!-- Box Title -->
+					<h3>Phone</h3>
+					<!-- Box Description -->
+					<p>Schedule an appointment over the phone</p>
+					<p>###-###-####</p>
+					<!-- Box Image -->
+					<img src="./images/phone.png" alt="phone" id="phoneImage"> <br>
+					<a href="./contact.html" class="button">Contact</a>
+				</li>
+			</ul>
+		</article>
+		<!-- Bottom footer content-->
+		<footer>Tech Support &bull; Orlando, FL</footer>
+	</body>
+</html>
