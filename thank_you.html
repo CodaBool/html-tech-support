@@ -10,8 +10,8 @@ Date:			12/8/2019
 <!DOCTYPE html>
 <head>
 <title>Form submission</title>
-<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.gif" sizes="16x16">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.gif" sizes="32x32">
 </head>
 <style>
 
@@ -21,7 +21,6 @@ span {
 </style>
 <body>
 <script>
-<!-- timer to redirect 8 seconds, then sends the user to index.html -->
 redirectTime = "8000";
 redirectURL = "https://codabool/projects";
 function timedRedirect() {
@@ -31,7 +30,6 @@ var timeLeft = 8;
 var elem = document.getElementById('timerdiv');
 var timerId = setInterval(countdown, 1000);
 
-<!-- function for displaying the countdown with updates every second to let the user know what is happening -->
 function countdown() {
     if (timeLeft == -1) {
         clearTimeout(timerId);
