@@ -1,6 +1,6 @@
 /*
  * File Name:			about.css
- * Name:						Coda Bool
+ * Name:					CodaBool
  * Course:				COP 2830C at Valencia College
  * Facilitator:			David Stendel
  * Description:			Style for the page which explains the history of the Tech Support company.
@@ -17,6 +17,26 @@
    font: inherit;
    vertical-align: baseline;
    list-style-type: none;
+}
+.btn {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+  line-height: 60px;
+  border-bottom: 3px solid black;
+  padding: 20px 80px 20px 80px;
+}
+.btn:hover {
+  background: #327c89;
+  width: 100%;
+}
+.navBox {
+	position: fixed;
+	right: 0px;
+  top:30%;
+  height:120px;
+  font-size: 1.2em;
+  width:12%;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -191,9 +211,12 @@ footer {
 	color: DarkRed;
 	font-size: 16px;
 }
-/* Changes applied when the screen's width is smaller than 1200 pixels */
+.navBox {
+  display:block;
+}
+/* resizes the body to match the screen width if viewed on small screen device */
 @media screen and (max-width: 1200px) {
-	body {
+  body {
 		width:100%;
 	}
 	/* Place the timelime to the left */
@@ -224,5 +247,10 @@ footer {
   /* Make all right containers behave like the left ones */
   .right {
 	left: 0%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .navBox {
+    display:none;
   }
 }

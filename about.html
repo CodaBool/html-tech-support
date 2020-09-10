@@ -1,6 +1,6 @@
 <!--
 File Name:			about.html
-Name:						Coda Bool
+Name:						CodaBool
 Course:					COP 2830C at Valencia College
 Facilitator:		David Stendel
 Description:		Content for the page which explains the history of the Tech Support company.
@@ -17,6 +17,7 @@ Date:						10/1/19
 		<link rel="stylesheet" href="./css/about.css" />
 		<link rel="icon" type="image/png" href="/images/favicon-16x16.gif" sizes="16x16">
 		<link rel="icon" type="image/png" href="/images/favicon-32x32.gif" sizes="32x32">
+		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 		<!-- Fonts are pulled from Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Chakra+Petch|Libre+Baskerville|Lora&display=swap" rel="stylesheet">
 	</head>
@@ -38,6 +39,10 @@ Date:						10/1/19
 			</nav>
 		</div>
 		<article>
+			<div class="navBox">
+				<a href="http://codabool.com/projects" class="btn" id="btn-home">GO HOME</a><br>
+				<a href="https://github.com/CodaBool/html-tech-support" class="btn" id="btn-code">SEE CODE</a>
+			</div>
 			<!-- div containing the entire timeline content -->
 			<div class="timeline">
 				<!-- content is split between left and right containers -->
@@ -88,4 +93,18 @@ Date:						10/1/19
 			Having trouble? email support: placeholder@mail.com <br>Tech Support &bull; Orlando, FL
 		</footer>
 	</body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#btn-home").hover(function(){
+				$("#img-home").css("height", 200);
+				}, function(){
+				$("#img-home").css("height", 0);
+			});
+			$("#btn-code").hover(function(){
+				$("#img-code").css("height", 200);
+				}, function(){
+				$("#img-code").css("height", 0);
+			});
+		});
+	</script>
 </html>

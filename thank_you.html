@@ -1,6 +1,6 @@
 <!--
 File Name:		thank_you.html
-Name:						Coda Bool
+Name:			CodaBool
 Course:			COP 2830C at Valencia College
 Facilitator:	David Stendel
 Description:	A thank you page which is the redirect after submiting form data at home and store. This page will redirect after 8 seconds.
@@ -21,8 +21,9 @@ span {
 </style>
 <body>
 <script>
+// timer to redirect 8 seconds, then sends the user to index.html 
 redirectTime = "8000";
-redirectURL = "https://codabool/projects";
+redirectURL = "/index.html";
 function timedRedirect() {
 	setTimeout("location.href = redirectURL;",redirectTime);
 
@@ -30,6 +31,7 @@ var timeLeft = 8;
 var elem = document.getElementById('timerdiv');
 var timerId = setInterval(countdown, 1000);
 
+// function for displaying the countdown with updates every second to let the user know what is happening
 function countdown() {
     if (timeLeft == -1) {
         clearTimeout(timerId);

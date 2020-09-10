@@ -17,6 +17,85 @@
    vertical-align: baseline;
    list-style-type: none;
 }
+
+.navBox, .navBox-small {
+	position: fixed;
+	right: 25px;
+  top:30%;
+  height:120px;
+  font-size: 1.2em;
+  width:12%;
+}
+.navBox img {
+  width: 100%;
+  height: 0px;
+  display: block;
+  margin: auto;
+}
+
+html {
+  *, *:before, *:after {
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+*:before, *:after {
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+}
+html *, html *:before, html *:after {
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+  }
+  *:before, *:after {
+    z-index: -1;
+  }
+  a {
+    text-decoration: none;
+}
+.navBox-btn {
+  text-decoration: none;
+  text-align: center;
+  line-height: 60px;
+  width: 100%;
+  color: black;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: auto;
+  border-bottom: 3px solid black;
+
+}
+.navBox a:before, .navBox-small a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #327c89;
+  transform: translateX(-100%);
+}
+.navBox a:hover, .navBox-small a:hover {
+  color: white;
+}
+.navBox a:hover:before, .navBox-small a:hover:before {
+  transform: translateX(0);
+}
+#img-home {
+  position: absolute;
+  bottom:116px;
+  right:0px;
+  border-radius: 20px 20px 0px 0px;
+}
+#img-code {
+  border-radius: 0px 0px 20px 20px;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -276,13 +355,26 @@ footer {
 	color: DarkRed;
 	font-size: 16px;
 }
-/* Changes applied when the screen's width is smaller than 1100 pixels */
+.navBox {
+  display:block;
+}
+.navBox-small {
+  display: none;
+  background: rgba(255, 255, 255, .7);
+}
+/* resizes the body to match the screen width if viewed on small screen device */
 @media screen and (max-width: 1100px) {
 	body {
 		width:100%;
 	}
-	#cal {
-		left:50px;
-		top: 300px;
-	}
+  .navBox {
+    display:none;
+  }
+  .navBox-small {
+    display: block;
+  }
+  #cal {
+    left:50px;
+    top: 300px;
+  }
 }
